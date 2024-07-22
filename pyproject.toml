@@ -5,7 +5,7 @@ build-backend = "maturin"
 [project]
 name = "Friday"
 version = "0.1"
-dependencies = ["gitpython", "openai-whisper", "speechrecognition", "sounddevice", "numpy", "pydub"]
+dependencies = ["gitpython", "openai-whisper", "speechrecognition", "sounddevice", "numpy", "pydub", "pyaudio", "soundfile"]
 
 [tool.maturin]
 python-source = "python"

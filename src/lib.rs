@@ -46,5 +46,6 @@ impl Voice {
 #[pyo3(name = "tts")]
 fn tts(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<Voice>()?;
+    // m.add_function(wrap_pyfunction!(standby, m)?)
     Ok(())
 }
