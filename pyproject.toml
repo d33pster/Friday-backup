@@ -9,7 +9,7 @@ dependencies = ["gitpython", "openai-whisper", "speechrecognition", "sounddevice
 
 [tool.maturin]
 python-source = "python"
-module-name = "Friday.tts"
+module-name = "Friday.rust"
 
 [project.urls]
 GitHub = "https://github.com/d33pster/Quinn"

@@ -1,8 +1,8 @@
-from ...tts import Voice
+from ...rust import tts
 
 class Reply:
     def __init__(self):
-        self.voice = Voice(volume = 3)
+        self.voice = tts.Voice(volume = 3)
     
     def give(self, text: str):
         self.voice.speak(text)
