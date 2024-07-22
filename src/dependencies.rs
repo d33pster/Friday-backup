@@ -50,6 +50,8 @@ async fn download_file_from_latest_release(filename: &str) -> Result<(), Box<dyn
         .json::<serde_json::Value>()
         .await?;
 
+    println!("{}", resp);
+
     if let Some(assets) = resp["assets"].as_array() {
         for asset in assets {
             if let Some(name) = asset["name"].as_str() {
