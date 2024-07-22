@@ -1,0 +1,10 @@
+implementation=CPython
+version=3.12
+shared=true
+abi3=false
+lib_name=python3.12
+lib_dir=/opt/homebrew/Caskroom/miniconda/base/envs/@_@/lib
+executable=/opt/homebrew/Caskroom/miniconda/base/envs/@_@/bin/python
+pointer_width=64
+build_flags=
+suppress_build_script_link_lines=false

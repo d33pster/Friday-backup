@@ -1,0 +1,12 @@
+/Users/d33pster/Friday/target/debug/deps/libignore-fe4fe5ec6c5e30ba.rmeta: /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/lib.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/default_types.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/dir.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/gitignore.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/overrides.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/pathutil.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/types.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/walk.rs
+
+/Users/d33pster/Friday/target/debug/deps/ignore-fe4fe5ec6c5e30ba.d: /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/lib.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/default_types.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/dir.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/gitignore.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/overrides.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/pathutil.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/types.rs /Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/walk.rs
+
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/lib.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/default_types.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/dir.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/gitignore.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/overrides.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/pathutil.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/types.rs:
+/Users/d33pster/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ignore-0.4.22/src/walk.rs:
