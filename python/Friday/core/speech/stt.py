@@ -2,9 +2,9 @@
 from speech_recognition import Microphone, Recognizer, RequestError, UnknownValueError
 from Friday.utils.terminal import Terminal_TEXT_Updater
 
-import sys
+import sys, os, threading
 
-class Input:
+class STT:
     def __init__(self, wakeup_word: str, resting_label: str, listening_label: str):
         self.Recognizer = Recognizer()
         self.Mic = Microphone()
@@ -24,7 +24,7 @@ class Input:
                 self.updater.message = " " + self.RESTING_LABEL
                 self.updater.update
 
-                audio = self.Recognizer.listen(source, phrase_time_limit=1)
+                audio = self.Recognizer.listen(source, phrase_time_limit=5)
 
                 try:
                     text = self.Recognizer.recognize_vosk(audio).lower()
@@ -42,17 +42,25 @@ class Input:
                     self.updater.message = " " + e
                     self.updater.print
                     sys.exit(1)
-    
-    @property
-    def listen(self) -> str:
+
+    def listen(self, phrase_time_limit: int = 1) -> str:
         with self.Mic as source:
+            # play beep
+            beep_thread = threading.Thread(target=listen_beep_thread_function)
+            beep_thread.start()
+
             self.Recognizer.adjust_for_ambient_noise(source, duration=1)
+
+            beep_thread.join()
             
             self.updater.refresh
             self.updater.message = " " + self.LISTENING_LABEL
             self.updater.update
 
-            audio = self.Recognizer.listen(source, phrase_time_limit=1)
+            try:
+                audio = self.Recognizer.listen(source, phrase_time_limit=phrase_time_limit)
+            except KeyboardInterrupt:
+                sys.exit(0)
 
             try:
                 text = self.Recognizer.recognize_vosk(audio).lower()
@@ -64,3 +72,19 @@ class Input:
                 self.updater.message = " " + e + "at listen()"
                 self.updater.print
                 sys.exit(1)
+    
+    def process_model_output(self, text: str) -> str:
+        return text.split(":")[1].replace("\n", "").replace("}", "").replace("\"", "").strip()
+
+# thread function for listen
+def listen_beep_thread_function():
+    from pydub import AudioSegment
+    from pydub.playback import play
+
+    audio_path = os.path.join(os.path.expanduser('~'), ".friday", "audios")
+
+    audio = AudioSegment.from_wav(os.path.join(audio_path, 'start_rec.wav'))
+
+    play(audio)
+
+

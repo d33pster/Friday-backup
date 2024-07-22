@@ -1,7 +1,7 @@
 # printing management
 class Terminal_TEXT_Updater:
     def __init__(self):
-        self.__message: str
+        self.__message: str = ""
     
     @property
     def message(self) -> str:
